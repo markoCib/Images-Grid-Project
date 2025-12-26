@@ -1,46 +1,46 @@
-body{
+body {
     font-family: 'Poppins', sans-serif;
 }
 
-.container{
+.container {
     max-width: 90%;
     margin: 0 auto;
     padding: 0 16px;
 }
 
-.navbar{
+.navbar {
     display: flex;
     justify-content: space-between;
     padding: 64px 0;
 }
 
-.navbar .left{
+.navbar .left {
     font-size: 32px;
     font-weight: bold;
 }
 
-.navbar .right{
+.navbar .right {
     width: 400px;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-.navbar .right a{
+.navbar .right a {
     text-decoration: none;
     color: black;
 }
 
-.navbar .right a:hover{
+.navbar .right a:hover {
     text-decoration: underline;
 }
 
-.navbar .right img{
+.navbar .right img {
     width: 24px;
     height: 24px;
 }
 
-.bar1, .bar2, .bar3{
+.bar1, .bar2, .bar3 {
     background-color: black;
     height: 4px;
     width: 36px;
@@ -48,8 +48,12 @@ body{
     border-radius: 10px;;
 }
 
-.navbar .hamburger{
+.navbar .hamburger {
     display: none;
+}
+
+.navbar .hamburger:hover {
+    cursor: pointer;
 }
 
 .mobileNav {
@@ -63,13 +67,18 @@ body{
     position: fixed;
     z-index: 2;
     top: 0; 
-    right: 0;
+    right: -160px;
     padding: 16px;
+    transition: 0.7s;
 }
 
 .mobileNav img {
     width: 24px;
     height: 24px;
+}
+
+.openDrawer {
+    transform: translateX(-160px);
 }
 
 .mobileNav a{ 
@@ -96,47 +105,47 @@ body{
     width: 100%;
 }
 
-#eth{
+#eth {
     grid-area: eth;
 }
 
-#alphabet{
+#alphabet {
     grid-area: alphabet;
 }
 
-#traveler{
+#traveler {
     grid-area: traveler;
 }
 
-#astro{
+#astro {
     grid-area: astro;
 }
 
-#cube{
+#cube {
     grid-area: cube;
 }
 
-#cup{
+#cup {
     grid-area: cup;
 }
 
-#insta{
+#insta {
     grid-area: insta;
 }
 
-#foam{
+#foam {
     grid-area: foam;
 }
 
-#dimensional{
+#dimensional {
     grid-area: dimensional;
 }
 
-.project{
+.project {
     position: relative; 
 }
 
-.project img{
+.project img {
     width: 100%;
     object-fit: cover;
     height: 100%;
@@ -235,17 +244,17 @@ footer {
     }
 }
 
-.animateBar1{
+.animateBar1 {
     animation: flipBar1 1s;
     animation-fill-mode: forwards;
 }
 
-.animateBar2{
+.animateBar2 {
     animation: fadeBar2 1s;
     animation-fill-mode: forwards;
 }
 
-.animateBar3{
+.animateBar3 {
     animation: flipBar3 1s;
     animation-fill-mode: forwards;
 }
